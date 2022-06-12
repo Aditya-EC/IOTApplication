@@ -1,0 +1,105 @@
+#video{
+        height:60%;
+        width:50%;
+        border:0.1vw solid green;
+        display:inline;
+        position:absolute;
+        margin:0.8%;
+        }
+        #vid{
+        height:100%;
+        width:100%;
+        display:none;
+        }
+        #camoff{
+        background-color:black;
+        height:100%;
+        color:white;
+        }
+        #camofftext{
+        position:absolute;
+        top:45%;
+        left:40%;
+        }
+        #notifications{
+
+        padding:0;
+        position:relative;
+        list-style-type:none;
+        width:100%;
+        border-collapse:collapse;
+        font-size:1.1vw;
+
+        }
+        #notifications li{
+        border-bottom:0.1vw solid red;
+        padding:2%;
+
+
+        }
+        #notification-div{
+        height:82%;
+        color:black;
+        overflow:auto;
+        width:30%;
+        margin-left:69%;
+        border-left:0.1vw solid silver;
+        }
+        #subtitle{
+        background-color:silver;
+        width:30%;
+        padding:1% 0%;
+        margin-top:1%;
+        margin-left:69%;
+        text-align:center;
+        font-size:1.1vw;
+        }
+        #camera-div{
+        width:20%;
+        height:20%;
+        position:relative;
+        margin-top:-10%;
+        margin-left:1%;
+        font-size:1.1vw;
+        }
+        #status{
+        left:32%;
+        top:26%;
+        position:absolute;
+
+        }
+        #switch{
+        border:0.2vw solid black;
+        height:12%;
+        width:22%;
+        border-radius:1vw;
+        margin-top:8%;
+        }
+        #switch-point{
+        position:relative;
+        height:65%;
+        width:25%;
+        background-color:black;
+        border:1px solid balck;
+        border-radius:20px;
+        margin-top:7%;
+        margin-left:8%;
+        margin-reight:8%;
+        padding:0;
+        align:right;
+        transition:all 0.2s;
+        }
+        #videolink{
+        background-color:rgba(255, 99, 71, 1);
+        border-radius:0.4vw;
+        color: white;
+        }
+        #control{
+    height:60%;
+    width:40%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    border-radius:0px 0px 1.5vw 0px;
+    display:none;
+    }

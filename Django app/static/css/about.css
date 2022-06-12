@@ -1,0 +1,23 @@
+#about{
+        height:88%;
+        overflow:auto;
+        border-radius:0px 0px 1.5vw 0px;
+        }
+        #abouttxt{
+        text-align:center;
+        font-size:1.1vw;
+        margin:0px;
+        padding:0;
+        }
+        #aboutlink{
+        background-color:rgba(255, 99, 71, 1);
+        border-radius:0.4vw;
+        color: white;
+        }
+        #flower{
+        margin:0;
+        }
+        #abt{
+        margin-top:1%;
+        padding:0;
+        }

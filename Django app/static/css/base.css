@@ -1,0 +1,158 @@
+body{
+    background-image:url("/media/images/iot2.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+    html{
+    height:auto;
+    height:100%;
+    }
+        #maindiv{
+        position:absolute;
+        top:5%;
+        left:10%;
+        bottom:5%;
+        right:10%;
+        }
+        #hnav{
+        background-color:rgb(146, 154, 107);
+        color:white;
+        font-size:1.4vw;
+        border-radius:0px 1.5vw 0px 0px;
+        border-bottom:0.1vw solid red;
+        height:8%;
+        }
+        #current-link{
+        position:relative;
+        top:25%;
+        left:1%;
+        }
+        #right-div{
+        margin-left:25%;
+        background-color:rgba(255,255,255,1);
+        height:100%;
+        border-radius:0vw 1.5vw 1.5vw 0vw;
+
+        }
+        #navbar{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        width:25%;
+        background-color:rgba(255,0,0,0.6);
+        position:absolute;
+        height:100%;
+        border-radius:1.5vw 0px 0px 1.5vw;
+        }
+        #corner{
+        color:yellow;
+        position:relative;
+        text-align:center;
+        top:2%;
+        border-bottom:0.05vw solid white;
+        font-size:1.4vw;
+        height:6%;
+        margin-bottom:20px;
+        }
+
+        #left-botton-corner{
+        position:absolute;
+        bottom:1%;
+        padding-right:5vw;
+        border-radius:0.4vw;
+        background-color:rgba(255, 99, 71, 1);
+        }
+        #left-botton-corner:hover{
+        background-color:red;
+        }
+
+        li a{
+        text-decoration:none;
+        font-size:1vw;
+        display:block;
+        color:white;
+        padding:3% 20%;
+        margin:5% 10%;
+        }
+
+        li a:hover:not(.active){
+        background-color:rgba(255, 99, 71, 1);
+        border-radius:0.4vw;
+       }
+       li a.active {
+        background-color:rgba(255, 99, 71, 1);
+        border-radius:0.4vw;
+        color: white;
+        }
+        #tools{
+        position:absolute;
+        top:1%;
+        right:15%;
+        width:8.25%;
+        height:6%;
+        border-radius:0.5vw;
+        border:none;
+        background-color:tomato;
+        color:white;
+        display:none;
+        }
+        #tools:active{
+        color:tomato;
+        background-color:rgb(240, 240, 240);
+        }
+        #tools:hover{
+        color:blue;
+        }
+        #accounts{
+        text-decoration:none;
+        position:absolute;
+        top:2%;
+        right:4%;
+        color:black;
+        }
+        #accounts:hover{
+        color:white;
+        background-color:DodgerBlue;
+        padding:0.5% 0.5%;
+        margin:-0.5% -0.5%;
+        border-radius:0.5vw;
+        }
+        #log{
+        text-decoration:none;
+        position:absolute;
+        top:2%;
+        right:4%;
+        color:white;
+        background-color:DodgerBlue;
+        padding:0.6% 1.5%;
+        margin:-0.5% -0.5%;
+        border-radius:0.5vw;
+        transition: 0.5s;
+        }
+        #log span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+        #log span:after {
+        content: '\00bb';
+         position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+
+        }
+        #log:hover span {
+        padding-right:15px;
+        }
+        #log:hover{
+        padding-left:0.4%;
+
+        }
+        #log:hover span:after {
+        opacity: 1;
+        right: 0;
+        }

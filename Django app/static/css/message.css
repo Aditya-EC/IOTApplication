@@ -1,0 +1,64 @@
+        #title-bar{
+        background-color:silver;
+        font-size:1.2vw;
+        margin:auto;
+        width:96%;
+        margin-top:1%;
+        padding:1%;
+        color:black;
+        }
+
+        #message-box{
+        margin:1%;
+        height:80%;
+        overflow:auto;
+        border-radius:;
+        border-collapse:collapse;
+        font-size:1.1vw;
+        }
+
+        .time{
+        text-align:left;
+        height:1vw;
+        max-width:290px;
+        min-width:15vw;
+        width:50vw;
+        padding:1%;
+        color:white;
+	    margin:0;
+         }
+
+	
+	.message{
+	    text-align:left;
+        height:1vw;
+        max-width:50vw;
+        padding:1%;
+	    width:70%;
+        color:white;
+	    margin:0;
+	    }
+
+
+        tr:nth-child(even){
+        background-color:#3cb371;
+	    margin:0;
+        }
+        tr:nth-child(odd){
+        background-color:grey;
+
+        }
+
+        #title2{
+        margin:1;
+
+        }
+        #title3{
+        margin:25.5%;
+
+        }
+       #messagelink{
+        background-color:rgba(255, 99, 71, 1);
+        border-radius:0.4vw;
+        color: white;
+        }

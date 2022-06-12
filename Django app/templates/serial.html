@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/serial.css' %}">
+<script src="{% static 'js/serial.js' %}"></script>
+{% if user.is_authenticated %}
+
+
+        <div id="input-box">
+        <input type="text" maxlength="25" id="cmd_input" placeholder="Enter command">
+            <button id="send-button" onclick="send_cmd()">Send</button>
+        </div>
+        <div id="cmd-box">
+            <ul id="cmd-list">
+
+            </ul>
+        </div>
+        <div id="task-bar">
+            <input type="checkbox" id="autoscroll" onclick="scrollfunc()"><span>Autoscroll</span>
+            <button id="clear-output" onclick="clear_op()">Clear output</button>
+
+        </div>
+<script src="{% static 'js/serial1.js' %}"></script>
+
+{% else %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/notlog.css' %}">
+<h1 id="notlog">Please Login</h1>
+{% endif %}
+
+{% endblock %}
+
+

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IOT</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index1.css' %}">
+</head>
+<body>
+	<div class="bgimg">
+		<div class="centerdiv">
+<img src="/media/images/userpic.png" id="profilepic">
+			<h2>USER LOGIN</h2>
+			<form method="post">
+				<div id="formfields">
+                		{% csrf_token %}
+				{{form.as_p}}
+				</div>
+				<br>
+				<div>
+				<button type="submit">LOGIN</button>
+				</div>
+			</form><br>
+			<div class="FORGOT-SECTION">
+				<h4>Forget Password ?</h4>
+			</div>
+	</div>
+</body>
+</html>

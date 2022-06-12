@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" >
+
+
+</head>
+<body>
+<div id="maindiv">
+    <ul id="navbar">
+        <li id="corner">IOT  APP</li>
+        <li><a href="/" id="messagelink">Messages</a></li>
+        <li><a id="doc" href="/media/pdf/iotpdf.pdf">Documentation</a></li>
+        <li><a id="seriallink" href="{% url 'serial' %}">Serial Sender</a></li>
+        <li><a id="videolink" href="{% url 'video' %}">Live Monitoring</a></li>
+        <li><a id="contactlink" href="{% url 'contact' %}">Contact</a></li>
+        <li><a id="aboutlink" href="{% url 'about' %}">About</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'logout' %}" id="left-botton-corner">Log Out</a></li>
+        {% else %}
+        <li><a href="" id="left-botton-corner">Sign Up</a></li>
+        {% endif %}
+    </ul>
+    <div id="right-div">
+        <div id="hnav">
+            <span id="current-link">Messages</span>
+
+            {% if user.is_authenticated %}
+            <button id="tools" onclick="tool()" disabled>Tools</button>
+            <a id="accounts" href="">Account</a>
+            {% else %}
+
+            <a id="log" href="{% url 'login' %}"><span>Login</span></a>
+
+            {% endif %}
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+</div>
+</body>
+</html>

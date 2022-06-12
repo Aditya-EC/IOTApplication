@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/message.css' %}">
+{% if user.is_authenticated %}
+<script src="{% static 'js/message.js' %}"></script>
+<div id="title-bar"><span id="title2">Time</span><span id="title3">Message</span></div>
+        <div id="message-box">
+        <table id="table">
+            {% for message in object_list %}
+            <tr><td class="time">{{message.time_recv}}</td><td class="message">{{message.message_recv}}</td></tr>
+            {% endfor %}
+        </table>
+        </div>
+{% else %}
+<script src="{% static 'js/message1.js' %}"></script>
+<link type="text/css" rel="stylesheet" href="{% static 'css/notlog.css' %}">
+<h1 id="notlog">Please Login</h1>
+{% endif %}
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+ #input-box{
+        background-color:silver;
+        padding:0.3% 0 0.3% 2px;
+        margin-top:0%;
+        font-size:1.1vw;
+        }
+
+        #cmd_input{
+        width:90.5%;
+        padding:0.8%;
+        font-size:0.9vw;
+        height:1%;
+        }
+        #send-button{
+        padding:0.8%;
+        font-size:0.8vw;
+        position:absolute;
+        right:0.5%;
+        }
+
+        #cmd-box{
+        height:80%;
+        margin:0% 0%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        }
+        #task-bar{
+        background-color:silver;
+        position:absolute;
+        width:74%;
+        bottom:0;
+        padding:0.4%;
+        border-radius:0px 0px 1.5vw 0px;
+        font-size:1.1vw;
+        height:5%;
+
+        }
+        #clear-output{
+        position:absolute;
+        padding:0.8%;
+        font-size:1vw;
+        height:75%;
+        right:3%;
+        }
+        #cmd-list{
+        list-style-type:none;
+        padding:0% 0.5%;
+        position:relative;
+        }
+        #cmd-list li{
+        margin:0.5% 0%;
+        }
+        #seriallink{
+        background-color:rgba(255, 99, 71, 1);
+        border-radius:0.4vw;
+        color: white;
+        }
+        #autoscroll{
+        height:50%;
+        width:2%;
+        padding:0;
+        margin:0;
+        }

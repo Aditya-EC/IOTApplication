@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/about.css' %}">
+<script src="{% static 'js/about.js' %}"></script>
+        <div id="about">
+            <img src="/media/images/iot3.jpg" width="100%" height="90%" id="flower">
+            <div id="abouttxt">
+                <h1 id="abt">About</h1>
+                <p>
+                    This is a real time based app.<br/>
+                    and this app works on internet of thing<br/>
+                    Technology. This app is designed for IOT based project.
+                </p>
+            </div>
+
+        </div>
+    {% endblock %}

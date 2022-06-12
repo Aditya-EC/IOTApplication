@@ -1,0 +1,1 @@
+document.getElementById('current-link').innerHTML='Messages';

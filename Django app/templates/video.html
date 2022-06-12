@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'js/video.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/loader.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/video.css' %}">
+{% if user.is_authenticated %}
+<div id="video">
+<img src="http://toplofty-rat-9906.dataplicity.io/?action=stream" id="vid">
+    <div id="camoff"><span id="camofftext">Camera is OFF</span></div>
+    <div id="loading">
+  <div class="loader"><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span></div>
+</div>
+</div>
+        <div id="subtitle">Notifications</div>
+        <div id="notification-div">
+        <ul id="notifications">
+
+        </ul>
+        </div>
+        <div id="camera-div">
+            <span id="camera">Camera</span>
+            <div id="switch" onmousedown="mDown(this)" onmouseup="mUp(this)" ">
+                <div id="switch-point">
+                </div>
+            </div>
+            <span id="status">Off</span>
+        </div>
+<iframe src="" id="control">
+</iframe>
+{% else %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/notlog.css' %}">
+<h1 id="notlog">Please Login</h1>
+{% endif %}
+{% endblock %}
